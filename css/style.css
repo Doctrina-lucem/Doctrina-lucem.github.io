@@ -1,0 +1,243 @@
+/*Import*/
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@900&display=swap');
+/*Global*/
+*{
+  margin: 0;
+  padding: 0;
+}
+.hide{
+  width: 290px;
+}
+.page{
+  height: 100%;
+  box-sizing: border-box;
+}
+.page-body{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: rgba(16, 16, 16, 1);
+  color: #ffffff;
+}
+.slider-hide{
+  display: none;
+}
+.container{
+  width: 1280px;
+  margin: 0 auto;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.section-title{
+  font-family: 'Overlock', "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+}
+.button{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 40px;
+  width: 180px;
+  border: none;
+  background-color: rgba(255,255,255, 0.9);
+  border-radius: 3px;
+}
+/*Header*/
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav{
+  width: 322px;
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*promo-main*/
+background-main-img{
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 550px;
+
+}
+.promo-main{
+  margin-bottom: 155px;
+
+
+}
+.promo-main-container{
+  margin-top: 228px;
+}
+.promo-title{
+  font-family: 'Overlock', cursive;
+  font-size: 120px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+.promo-second-title{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  opacity: 0.9;
+}
+.promo-wrapper{
+  text-align: center;
+}
+/*promo-about*/
+.about-wrapper{
+  display: grid;
+  grid-template-columns: 407px 730px;
+  justify-content: space-between;
+}
+.about-text{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  line-height: 24px;
+}
+.about-text-first{
+  margin-bottom: 30px;
+}
+.about-slider-control{
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+.dots {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.dots__item {
+  border-radius: 9999px;
+  height: 8px;
+  width: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 0 4px;
+}
+.dots__item:hover {
+  background-color: rgba(253, 170, 99, 1);
+  border: 1px solid rgba(253, 170, 99, 1);
+  height: 12px;
+  width: 12px;
+}
+.about-slider-img p{
+  text-align: center;
+  width: 512px;
+  height: 368px;
+}
+/*Seasons*/
+.slide-hover:hover .slider-hide{
+  display: block;
+}
+.seasons-slider-control{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.seasons-slider{
+  display: flex;
+  justify-content: space-between;
+}
+.seasons-container{
+  display: grid;
+  grid-template-rows: 40px 400px;
+}
+.slider-hide{}
+.seasons-slider li{
+  text-align: center;
+}
+.seasons-slider p{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+/*Actors*/
+.actors-container{
+  display: grid;
+  grid-template-rows: 40px 400px;
+}
+.actors-slider li{
+  text-align: center;
+}
+.actors-slider a{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.actors-slider{
+  display: flex;
+  justify-content: space-between;
+}
+.actors-slider li {
+  display: flex;
+  flex-direction: column;
+}
+.actors-slider-control{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*Slider*/
+.disable{
+  display: none;
+}
+
+/*News*/
+.new-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 83px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.new-grid-up, .new-grid-down{
+  display: grid;
+  grid-template-columns: 510px 510px;
+  column-gap: 220px;
+}
+.new-grid-up{
+  height: 160px;
+}
+.new-grid-down div{
+  height: 207px;
+}
+.new-block-title{
+  font-size: 22px;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255,255,255,0.70);
+  margin-bottom: 29px;
+}
+.new-block-subtitle{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.new-block-text{
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+}
